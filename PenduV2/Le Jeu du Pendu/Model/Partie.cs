@@ -15,6 +15,8 @@ namespace Le_Jeu_du_Pendu.Model
         public String motaafficher; 
         public List<String> listeATrouver;
         public DialogResult msg;
+        public int dureeTotale=0;
+        public Timer timer;
         public void changerIMG(PictureBox pb_pendu)
         {
             
@@ -115,14 +117,15 @@ namespace Le_Jeu_du_Pendu.Model
           
         }
 
-        public void victoire(Form formulaireJeuActif, TextBox txt_motaafficher,List<string> listeMotaTrouver, PictureBox pb_pendu)
+        public void victoire(Form formulaireJeuActif, TextBox txt_motaafficher,List<string> listeMotaTrouver, PictureBox pb_pendu, TextBox txt_timer)
         { 
             if (nbEssais >= 9)
             {
+                timer.Stop();
                 msg = MessageBox.Show("Vous avez perdu !! \r\n Vous deviez trouver le mot : "+motatrouver+"\r\nVoulez vous faire une autre partie ??","You loose", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
                 if(msg == DialogResult.Yes)
                 {
-                    remiseAZero(formulaireJeuActif, txt_motaafficher, listeMotaTrouver, pb_pendu);
+                    remiseAZero(formulaireJeuActif, txt_motaafficher, listeMotaTrouver, pb_pendu,timer);
                 }
                 else
                 {
@@ -135,10 +138,12 @@ namespace Le_Jeu_du_Pendu.Model
             {
                 if(motatrouver==motaafficher && nbEssais < 9)
                 {
-                    msg = MessageBox.Show("Vous avez gagné !! \r\n Vous deviez trouver le mot : " + motatrouver + "\r\nVoulez vous faire une autre partie ??", "You win", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+                    timer.Stop();
+                    msg = MessageBox.Show("Vous avez gagné !! \r\n Vous deviez trouver le mot : " + motatrouver + "\r\n Vous avez trouvé le mot en : "+txt_timer.Text+"\r\nVoulez vous faire une autre partie ??", "You win", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+                    
                     if (msg == DialogResult.Yes)
                     {
-                        remiseAZero(formulaireJeuActif, txt_motaafficher, listeMotaTrouver, pb_pendu);
+                        remiseAZero(formulaireJeuActif, txt_motaafficher, listeMotaTrouver, pb_pendu,timer);
                     }
                     else
                     {
@@ -153,14 +158,20 @@ namespace Le_Jeu_du_Pendu.Model
             
   
         }
+       
 
-        public void remiseAZero(Form formulaireJeuActif, TextBox txt_motaafficher, List<string> listeMotaTrouver, PictureBox pb_pendu)
+        public void remiseAZero(Form formulaireJeuActif, TextBox txt_motaafficher, List<string> listeMotaTrouver, PictureBox pb_pendu,Timer timer)
         {
             //Mettre à vide les attribut motaafficher et motatrouver
             motaafficher = "";
             motatrouver = "";
             // Mettre le nombre d'essai à 1
             nbEssais = 1;
+
+            // Mettre à jour le timer 
+            dureeTotale = 0;
+            timer.Start(); 
+
             // Choisir un nouveau mot à trouver
             choisirMotATrouver(listeMotaTrouver);
             // Générer un nouveau mot à afficher
@@ -179,8 +190,24 @@ namespace Le_Jeu_du_Pendu.Model
 
 
         }
-        
-        
+
+        public void gestionTimer(TextBox txt_timer)
+        {
+            timer = new Timer();
+            timer.Interval = 1000;
+            timer.Tick += (sender, e) => Timer_Tick(sender, e, txt_timer);
+
+            timer.Start();
+        }
+
+        public void Timer_Tick(object sender, EventArgs e, TextBox txt_timer)
+        {
+            dureeTotale++;
+            txt_timer.Text = dureeTotale.ToString() + " sec";
+        }
+
+
+
     }
 
 }

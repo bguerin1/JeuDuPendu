@@ -52,7 +52,7 @@ namespace Le_Jeu_du_Pendu
             }
             if(txt_prenom.Text !="" && txt_nom.Text !="" && comboBox_difficulté.SelectedIndex > -1)
             {
-                Jeu2 Form2= new Jeu2();
+                Jeu2 Form2= new Jeu2(txt_prenom.Text+" "+txt_nom.Text, comboBox_difficulté.Text);
                 Form2.Show();
                 this.Hide();
             }
@@ -82,5 +82,6 @@ namespace Le_Jeu_du_Pendu
             }
         }
 
+        
     }
 }

@@ -50,7 +50,7 @@
             // lbl_nom
             // 
             this.lbl_nom.AutoSize = true;
-            this.lbl_nom.Location = new System.Drawing.Point(69, 80);
+            this.lbl_nom.Location = new System.Drawing.Point(69, 178);
             this.lbl_nom.Name = "lbl_nom";
             this.lbl_nom.Size = new System.Drawing.Size(29, 13);
             this.lbl_nom.TabIndex = 3;
@@ -59,7 +59,7 @@
             // lbl_prenom
             // 
             this.lbl_prenom.AutoSize = true;
-            this.lbl_prenom.Location = new System.Drawing.Point(69, 131);
+            this.lbl_prenom.Location = new System.Drawing.Point(69, 77);
             this.lbl_prenom.Name = "lbl_prenom";
             this.lbl_prenom.Size = new System.Drawing.Size(43, 13);
             this.lbl_prenom.TabIndex = 4;
@@ -67,14 +67,14 @@
             // 
             // txt_nom
             // 
-            this.txt_nom.Location = new System.Drawing.Point(160, 77);
+            this.txt_nom.Location = new System.Drawing.Point(160, 175);
             this.txt_nom.Name = "txt_nom";
             this.txt_nom.Size = new System.Drawing.Size(186, 20);
             this.txt_nom.TabIndex = 5;
             // 
             // txt_prenom
             // 
-            this.txt_prenom.Location = new System.Drawing.Point(160, 128);
+            this.txt_prenom.Location = new System.Drawing.Point(160, 77);
             this.txt_prenom.Name = "txt_prenom";
             this.txt_prenom.Size = new System.Drawing.Size(186, 20);
             this.txt_prenom.TabIndex = 6;

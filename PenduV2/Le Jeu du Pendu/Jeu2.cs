@@ -13,19 +13,27 @@ namespace Le_Jeu_du_Pendu
 {
     public partial class Jeu2 : Form
     {
+        
+
+
         // Déclaration de l'objet P de la classe Partie pour la portée de la variable et une réutilisation dans le projet; 
         
         Partie P;
         public Jeu2()
         {
             InitializeComponent();
-           
+
+            
+
             // Instanciation de l'objet P à cet endroit. 
 
             P = new Partie();
+            
             init();
+            
 
-  
+
+
 
         }
 
@@ -43,8 +51,34 @@ namespace Le_Jeu_du_Pendu
             P.verifier(((Button)sender).Text.ToString(), txt_motatrouver);
             ((Button)sender).Enabled = false;
             P.changerIMG(pb_pendu);
-            P.victoire(this, txt_motatrouver, listeMotaTrouver, pb_pendu);
+            P.victoire(this, txt_motatrouver, listeMotaTrouver, pb_pendu,txt_timer);
+            
         }
-        
+
+
+
+        private void Init()
+        {
+            InitializeComponent();
+            // Ajouter le code permettant l’initialisation du jeu 
+
+            P = new Partie();
+            P.gestionTimer(txt_timer);
+            init();
+
+
+        }
+        public Jeu2(string nomPrenomJoueur, string difficultePartie)
+        {
+            Init();
+
+            //Ajouter le code permettant de renseigner les textbox de droite
+
+            txt_prenom.Text = nomPrenomJoueur;
+            txt_difficult.Text = difficultePartie;
+      
+        }
+
+       
     }
 }

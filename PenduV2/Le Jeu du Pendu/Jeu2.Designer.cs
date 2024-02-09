@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txt_nom = new System.Windows.Forms.TextBox();
+            this.txt_difficult = new System.Windows.Forms.TextBox();
             this.txt_prenom = new System.Windows.Forms.TextBox();
             this.txt_motatrouver = new System.Windows.Forms.TextBox();
             this.btn_A = new System.Windows.Forms.Button();
@@ -59,26 +59,29 @@
             this.btn_Y = new System.Windows.Forms.Button();
             this.btn_Z = new System.Windows.Forms.Button();
             this.pb_pendu = new System.Windows.Forms.PictureBox();
+            this.txt_timer = new System.Windows.Forms.TextBox();
+            this.lbl_timer = new System.Windows.Forms.Label();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_pendu)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.txt_nom);
+            this.panel1.Controls.Add(this.txt_difficult);
             this.panel1.Controls.Add(this.txt_prenom);
             this.panel1.Location = new System.Drawing.Point(389, 51);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(334, 144);
             this.panel1.TabIndex = 1;
             // 
-            // txt_nom
+            // txt_difficult
             // 
-            this.txt_nom.Enabled = false;
-            this.txt_nom.Location = new System.Drawing.Point(29, 90);
-            this.txt_nom.Name = "txt_nom";
-            this.txt_nom.Size = new System.Drawing.Size(278, 20);
-            this.txt_nom.TabIndex = 1;
+            this.txt_difficult.Enabled = false;
+            this.txt_difficult.Location = new System.Drawing.Point(29, 90);
+            this.txt_difficult.Name = "txt_difficult";
+            this.txt_difficult.Size = new System.Drawing.Size(278, 20);
+            this.txt_difficult.TabIndex = 1;
             // 
             // txt_prenom
             // 
@@ -90,7 +93,8 @@
             // 
             // txt_motatrouver
             // 
-            this.txt_motatrouver.Location = new System.Drawing.Point(50, 287);
+            this.txt_motatrouver.Enabled = false;
+            this.txt_motatrouver.Location = new System.Drawing.Point(50, 271);
             this.txt_motatrouver.Name = "txt_motatrouver";
             this.txt_motatrouver.Size = new System.Drawing.Size(344, 20);
             this.txt_motatrouver.TabIndex = 2;
@@ -368,11 +372,38 @@
             this.pb_pendu.TabIndex = 0;
             this.pb_pendu.TabStop = false;
             // 
+            // txt_timer
+            // 
+            this.txt_timer.Enabled = false;
+            this.txt_timer.Location = new System.Drawing.Point(473, 287);
+            this.txt_timer.Name = "txt_timer";
+            this.txt_timer.Size = new System.Drawing.Size(100, 20);
+            this.txt_timer.TabIndex = 29;
+            // 
+            // lbl_timer
+            // 
+            this.lbl_timer.AutoSize = true;
+            this.lbl_timer.Location = new System.Drawing.Point(475, 271);
+            this.lbl_timer.Name = "lbl_timer";
+            this.lbl_timer.Size = new System.Drawing.Size(39, 13);
+            this.lbl_timer.TabIndex = 30;
+            this.lbl_timer.Text = "Timer :";
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(50, 297);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(344, 23);
+            this.progressBar1.TabIndex = 31;
+            // 
             // Jeu2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.lbl_timer);
+            this.Controls.Add(this.txt_timer);
             this.Controls.Add(this.btn_Z);
             this.Controls.Add(this.btn_Y);
             this.Controls.Add(this.btn_X);
@@ -416,7 +447,7 @@
 
         private System.Windows.Forms.PictureBox pb_pendu;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox txt_nom;
+        private System.Windows.Forms.TextBox txt_difficult;
         private System.Windows.Forms.TextBox txt_prenom;
         private System.Windows.Forms.TextBox txt_motatrouver;
         private System.Windows.Forms.Button btn_A;
@@ -445,5 +476,8 @@
         private System.Windows.Forms.Button btn_X;
         private System.Windows.Forms.Button btn_Y;
         private System.Windows.Forms.Button btn_Z;
+        private System.Windows.Forms.TextBox txt_timer;
+        private System.Windows.Forms.Label lbl_timer;
+        private System.Windows.Forms.ProgressBar progressBar1;
     }
 }
