@@ -51,8 +51,11 @@ namespace Le_Jeu_du_Pendu
             P.verifier(((Button)sender).Text.ToString(), txt_motatrouver);
             ((Button)sender).Enabled = false;
             P.changerIMG(pb_pendu);
+            P.remiseZeroProgress(progressBar);
             P.victoire(this, txt_motatrouver, listeMotaTrouver, pb_pendu,txt_timer);
             
+
+
         }
 
 
@@ -61,9 +64,11 @@ namespace Le_Jeu_du_Pendu
         {
             InitializeComponent();
             // Ajouter le code permettant l’initialisation du jeu 
+            List<string> listeMotaTrouver = new List<string> { "Francophile", "Chlorophylle", "Conspirateur", "Qualification", "Attraction", "Cornemuse", "Tourisme", "Diapason", "Brouhaha" };
 
             P = new Partie();
-            P.gestionTimer(txt_timer);
+            P.gestionTimer(txt_timer,progressBar,pb_pendu,this, txt_motatrouver,listeMotaTrouver);
+            
             init();
 
 
@@ -78,7 +83,5 @@ namespace Le_Jeu_du_Pendu
             txt_difficult.Text = difficultePartie;
       
         }
-
-       
     }
 }

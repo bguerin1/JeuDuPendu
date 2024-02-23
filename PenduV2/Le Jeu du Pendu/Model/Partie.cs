@@ -17,6 +17,8 @@ namespace Le_Jeu_du_Pendu.Model
         public DialogResult msg;
         public int dureeTotale=0;
         public Timer timer;
+        public Int32 dureeCout;
+
         public void changerIMG(PictureBox pb_pendu)
         {
             
@@ -191,18 +193,36 @@ namespace Le_Jeu_du_Pendu.Model
 
         }
 
-        public void gestionTimer(TextBox txt_timer)
+        public void gestionTimer(TextBox txt_timer, ProgressBar progressBar, PictureBox pb_pendu, Form formulaireJeuActif,TextBox txt_motaafficher, List<string> listeMotaTrouver)
         {
             timer = new Timer();
             timer.Interval = 1000;
-            timer.Tick += (sender, e) => Timer_Tick(sender, e, txt_timer);
+            timer.Tick += (sender, e) => Timer_Tick(sender, e, txt_timer,progressBar,pb_pendu, formulaireJeuActif, txt_motaafficher, listeMotaTrouver);
 
             timer.Start();
+
+            
         }
 
-        public void Timer_Tick(object sender, EventArgs e, TextBox txt_timer)
+        public void remiseZeroProgress(ProgressBar progressBar)
+        {
+            progressBar.Value = 0;
+        }
+        public void Timer_Tick(object sender, EventArgs e, TextBox txt_timer,ProgressBar progressBar, PictureBox pb_pendu,Form formulaireJeuActif, TextBox txt_motaafficher, List<string> listeMotaTrouver)
         {
             dureeTotale++;
+            dureeCout++;
+            progressBar.Increment(1);
+            if(dureeCout>=10)
+            {
+                dureeCout = 0;
+                nbEssais++;
+                changerIMG(pb_pendu);
+                progressBar.Value = 0;
+                victoire(formulaireJeuActif, txt_motaafficher, listeMotaTrouver, pb_pendu, txt_timer);
+
+            }
+            
             txt_timer.Text = dureeTotale.ToString() + " sec";
         }
 

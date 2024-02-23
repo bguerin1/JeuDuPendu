@@ -42,3 +42,4 @@ P:\SLAM 2 - C#\PenduTP2\PenduV2\Le Jeu du Pendu\obj\Debug\Le Jeu du Pendu.pdb
 \\192.168.10.2\Données\bguerin\SLAM 2 - C#\PenduTP2\PenduV2\Le Jeu du Pendu\obj\Debug\Le Jeu du Pendu.csproj.CoreCompileInputs.cache
 \\192.168.10.2\Données\bguerin\SLAM 2 - C#\PenduTP2\PenduV2\Le Jeu du Pendu\obj\Debug\Le Jeu du Pendu.exe
 \\192.168.10.2\Données\bguerin\SLAM 2 - C#\PenduTP2\PenduV2\Le Jeu du Pendu\obj\Debug\Le Jeu du Pendu.pdb
+P:\SLAM 2 - C#\PenduTP2\PenduV2\Le Jeu du Pendu\obj\Debug\Le_Jeu_du_Pendu.Menu.resources

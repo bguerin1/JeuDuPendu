@@ -58,10 +58,11 @@
             this.btn_X = new System.Windows.Forms.Button();
             this.btn_Y = new System.Windows.Forms.Button();
             this.btn_Z = new System.Windows.Forms.Button();
-            this.pb_pendu = new System.Windows.Forms.PictureBox();
             this.txt_timer = new System.Windows.Forms.TextBox();
             this.lbl_timer = new System.Windows.Forms.Label();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.progressBar = new System.Windows.Forms.ProgressBar();
+            this.pb_pendu = new System.Windows.Forms.PictureBox();
+            this.btn_fermer = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_pendu)).BeginInit();
             this.SuspendLayout();
@@ -359,19 +360,6 @@
             this.btn_Z.UseVisualStyleBackColor = true;
             this.btn_Z.Click += new System.EventHandler(this.btn_Click);
             // 
-            // pb_pendu
-            // 
-            this.pb_pendu.ErrorImage = null;
-            this.pb_pendu.Image = global::Le_Jeu_du_Pendu.Properties.Resources.C1;
-            this.pb_pendu.ImageLocation = "";
-            this.pb_pendu.InitialImage = null;
-            this.pb_pendu.Location = new System.Drawing.Point(71, 51);
-            this.pb_pendu.Name = "pb_pendu";
-            this.pb_pendu.Size = new System.Drawing.Size(288, 204);
-            this.pb_pendu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_pendu.TabIndex = 0;
-            this.pb_pendu.TabStop = false;
-            // 
             // txt_timer
             // 
             this.txt_timer.Enabled = false;
@@ -389,19 +377,43 @@
             this.lbl_timer.TabIndex = 30;
             this.lbl_timer.Text = "Timer :";
             // 
-            // progressBar1
+            // progressBar
             // 
-            this.progressBar1.Location = new System.Drawing.Point(50, 297);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(344, 23);
-            this.progressBar1.TabIndex = 31;
+            this.progressBar.Location = new System.Drawing.Point(50, 297);
+            this.progressBar.Maximum = 10;
+            this.progressBar.Name = "progressBar";
+            this.progressBar.Size = new System.Drawing.Size(344, 23);
+            this.progressBar.TabIndex = 31;
+            // 
+            // pb_pendu
+            // 
+            this.pb_pendu.ErrorImage = null;
+            this.pb_pendu.Image = global::Le_Jeu_du_Pendu.Properties.Resources.C1;
+            this.pb_pendu.ImageLocation = "";
+            this.pb_pendu.InitialImage = null;
+            this.pb_pendu.Location = new System.Drawing.Point(71, 51);
+            this.pb_pendu.Name = "pb_pendu";
+            this.pb_pendu.Size = new System.Drawing.Size(288, 204);
+            this.pb_pendu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_pendu.TabIndex = 0;
+            this.pb_pendu.TabStop = false;
+            // 
+            // btn_fermer
+            // 
+            this.btn_fermer.Location = new System.Drawing.Point(697, 12);
+            this.btn_fermer.Name = "btn_fermer";
+            this.btn_fermer.Size = new System.Drawing.Size(75, 23);
+            this.btn_fermer.TabIndex = 32;
+            this.btn_fermer.Text = "Fermer";
+            this.btn_fermer.UseVisualStyleBackColor = true;
             // 
             // Jeu2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.progressBar1);
+            this.ClientSize = new System.Drawing.Size(784, 407);
+            this.Controls.Add(this.btn_fermer);
+            this.Controls.Add(this.progressBar);
             this.Controls.Add(this.lbl_timer);
             this.Controls.Add(this.txt_timer);
             this.Controls.Add(this.btn_Z);
@@ -433,6 +445,7 @@
             this.Controls.Add(this.txt_motatrouver);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pb_pendu);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Jeu2";
             this.Text = "1";
             this.panel1.ResumeLayout(false);
@@ -478,6 +491,7 @@
         private System.Windows.Forms.Button btn_Z;
         private System.Windows.Forms.TextBox txt_timer;
         private System.Windows.Forms.Label lbl_timer;
-        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.ProgressBar progressBar;
+        private System.Windows.Forms.Button btn_fermer;
     }
 }

@@ -35,6 +35,7 @@
             this.txt_prenom = new System.Windows.Forms.TextBox();
             this.comboBox_difficulté = new System.Windows.Forms.ComboBox();
             this.lbl_difficulté = new System.Windows.Forms.Label();
+            this.btn_fermer = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_valider
@@ -97,11 +98,22 @@
             this.lbl_difficulté.TabIndex = 8;
             this.lbl_difficulté.Text = "Difficulté";
             // 
+            // btn_fermer
+            // 
+            this.btn_fermer.Location = new System.Drawing.Point(679, 45);
+            this.btn_fermer.Name = "btn_fermer";
+            this.btn_fermer.Size = new System.Drawing.Size(75, 23);
+            this.btn_fermer.TabIndex = 33;
+            this.btn_fermer.Text = "Fermer";
+            this.btn_fermer.UseVisualStyleBackColor = true;
+            this.btn_fermer.Click += new System.EventHandler(this.btn_fermer_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(784, 407);
+            this.Controls.Add(this.btn_fermer);
             this.Controls.Add(this.lbl_difficulté);
             this.Controls.Add(this.comboBox_difficulté);
             this.Controls.Add(this.txt_prenom);
@@ -109,6 +121,7 @@
             this.Controls.Add(this.lbl_prenom);
             this.Controls.Add(this.lbl_nom);
             this.Controls.Add(this.btn_valider);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "MonPremierProgramme";
             this.ResumeLayout(false);
@@ -124,6 +137,7 @@
         private System.Windows.Forms.TextBox txt_prenom;
         private System.Windows.Forms.ComboBox comboBox_difficulté;
         private System.Windows.Forms.Label lbl_difficulté;
+        private System.Windows.Forms.Button btn_fermer;
     }
 }
 

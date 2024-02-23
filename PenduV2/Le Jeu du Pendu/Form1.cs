@@ -82,6 +82,9 @@ namespace Le_Jeu_du_Pendu
             }
         }
 
-        
+        private void btn_fermer_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
