@@ -31,3 +31,14 @@ P:\SLAM 2 - C#\PenduTP2\PenduV2\Le Jeu du Pendu\obj\Debug\Le Jeu du Pendu.csproj
 P:\SLAM 2 - C#\PenduTP2\PenduV2\Le Jeu du Pendu\obj\Debug\Le Jeu du Pendu.csproj.CoreCompileInputs.cache
 P:\SLAM 2 - C#\PenduTP2\PenduV2\Le Jeu du Pendu\obj\Debug\Le Jeu du Pendu.exe
 P:\SLAM 2 - C#\PenduTP2\PenduV2\Le Jeu du Pendu\obj\Debug\Le Jeu du Pendu.pdb
+\\192.168.10.2\Données\bguerin\SLAM 2 - C#\PenduTP2\PenduV2\Le Jeu du Pendu\bin\Debug\Le Jeu du Pendu.exe.config
+\\192.168.10.2\Données\bguerin\SLAM 2 - C#\PenduTP2\PenduV2\Le Jeu du Pendu\bin\Debug\Le Jeu du Pendu.exe
+\\192.168.10.2\Données\bguerin\SLAM 2 - C#\PenduTP2\PenduV2\Le Jeu du Pendu\bin\Debug\Le Jeu du Pendu.pdb
+\\192.168.10.2\Données\bguerin\SLAM 2 - C#\PenduTP2\PenduV2\Le Jeu du Pendu\obj\Debug\Le Jeu du Pendu.csproj.AssemblyReference.cache
+\\192.168.10.2\Données\bguerin\SLAM 2 - C#\PenduTP2\PenduV2\Le Jeu du Pendu\obj\Debug\Le_Jeu_du_Pendu.Form1.resources
+\\192.168.10.2\Données\bguerin\SLAM 2 - C#\PenduTP2\PenduV2\Le Jeu du Pendu\obj\Debug\Le_Jeu_du_Pendu.Jeu2.resources
+\\192.168.10.2\Données\bguerin\SLAM 2 - C#\PenduTP2\PenduV2\Le Jeu du Pendu\obj\Debug\Le_Jeu_du_Pendu.Properties.Resources.resources
+\\192.168.10.2\Données\bguerin\SLAM 2 - C#\PenduTP2\PenduV2\Le Jeu du Pendu\obj\Debug\Le Jeu du Pendu.csproj.GenerateResource.cache
+\\192.168.10.2\Données\bguerin\SLAM 2 - C#\PenduTP2\PenduV2\Le Jeu du Pendu\obj\Debug\Le Jeu du Pendu.csproj.CoreCompileInputs.cache
+\\192.168.10.2\Données\bguerin\SLAM 2 - C#\PenduTP2\PenduV2\Le Jeu du Pendu\obj\Debug\Le Jeu du Pendu.exe
+\\192.168.10.2\Données\bguerin\SLAM 2 - C#\PenduTP2\PenduV2\Le Jeu du Pendu\obj\Debug\Le Jeu du Pendu.pdb
