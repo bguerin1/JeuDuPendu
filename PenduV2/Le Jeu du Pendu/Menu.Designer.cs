@@ -30,10 +30,10 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.jeuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.démarrerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.scoreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.paramètresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.démarrerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -59,6 +59,13 @@
             this.jeuToolStripMenuItem.Size = new System.Drawing.Size(36, 20);
             this.jeuToolStripMenuItem.Text = "Jeu";
             // 
+            // démarrerToolStripMenuItem
+            // 
+            this.démarrerToolStripMenuItem.Name = "démarrerToolStripMenuItem";
+            this.démarrerToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.démarrerToolStripMenuItem.Text = "Démarrer";
+            this.démarrerToolStripMenuItem.Click += new System.EventHandler(this.démarrerToolStripMenuItem_Click);
+            // 
             // scoreToolStripMenuItem
             // 
             this.scoreToolStripMenuItem.Name = "scoreToolStripMenuItem";
@@ -76,13 +83,6 @@
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(24, 20);
             this.toolStripMenuItem1.Text = "?";
-            // 
-            // démarrerToolStripMenuItem
-            // 
-            this.démarrerToolStripMenuItem.Name = "démarrerToolStripMenuItem";
-            this.démarrerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.démarrerToolStripMenuItem.Text = "Démarrer";
-            this.démarrerToolStripMenuItem.Click += new System.EventHandler(this.démarrerToolStripMenuItem_Click);
             // 
             // panelMenu
             // 
@@ -116,6 +116,6 @@
         private System.Windows.Forms.ToolStripMenuItem scoreToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem paramètresToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.Panel panelMenu;
+        public System.Windows.Forms.Panel panelMenu;
     }
 }

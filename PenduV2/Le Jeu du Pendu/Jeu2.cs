@@ -83,5 +83,10 @@ namespace Le_Jeu_du_Pendu
             txt_difficult.Text = difficultePartie;
       
         }
+
+        private void btn_fermer_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

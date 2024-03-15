@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Le_Jeu_du_Pendu.Model;
+
 
 namespace Le_Jeu_du_Pendu
 {
@@ -17,27 +19,10 @@ namespace Le_Jeu_du_Pendu
             InitializeComponent();
         }
 
-        public Form activeForm = null;
-        public void openChildForm(Form formEnfant)
-        {
-            if (activeForm != null)
-                activeForm.Close();
-
-            activeForm = formEnfant;
-            formEnfant.TopLevel = false;
-            formEnfant.FormBorderStyle = FormBorderStyle.None;
-            formEnfant.Dock = DockStyle.Fill;
-            panelMenu.Controls.Add(formEnfant);
-            panelMenu.Tag = formEnfant;
-            formEnfant.BringToFront();
-            formEnfant.Show();
-
-            
-        }
-
         private void démarrerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            openChildForm(new Form1());
+            SousFormulaire SF = new SousFormulaire((System.Windows.Forms.Application.OpenForms["Menu"] as Menu).panelMenu);
+            SF.openChildForm(new Form1());
         }
     }
 }

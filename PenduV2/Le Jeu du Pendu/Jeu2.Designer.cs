@@ -404,14 +404,15 @@
             this.btn_fermer.Name = "btn_fermer";
             this.btn_fermer.Size = new System.Drawing.Size(75, 23);
             this.btn_fermer.TabIndex = 32;
-            this.btn_fermer.Text = "Fermer";
+            this.btn_fermer.Text = "Quitter";
             this.btn_fermer.UseVisualStyleBackColor = true;
+            this.btn_fermer.Click += new System.EventHandler(this.btn_fermer_Click);
             // 
             // Jeu2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 407);
+            this.ClientSize = new System.Drawing.Size(800, 446);
             this.Controls.Add(this.btn_fermer);
             this.Controls.Add(this.progressBar);
             this.Controls.Add(this.lbl_timer);
@@ -446,6 +447,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pb_pendu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Location = new System.Drawing.Point(0, 27);
             this.Name = "Jeu2";
             this.Text = "1";
             this.panel1.ResumeLayout(false);

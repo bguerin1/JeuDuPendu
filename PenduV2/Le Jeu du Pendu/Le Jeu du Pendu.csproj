@@ -64,6 +64,7 @@
     <Compile Include="Jeu2.Designer.cs">
       <DependentUpon>Jeu2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\SousFormulaire.cs" />
     <Compile Include="Model\Partie.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

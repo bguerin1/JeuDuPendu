@@ -131,8 +131,8 @@ namespace Le_Jeu_du_Pendu.Model
                 }
                 else
                 {
-                    Form1 Accueil = new Form1();
-                    Accueil.Show();
+                    SousFormulaire SF = new SousFormulaire((System.Windows.Forms.Application.OpenForms["Menu"] as Menu).panelMenu);
+                    SF.openChildForm(new Form1());
                     formulaireJeuActif.Hide();
                 }
             }
@@ -149,8 +149,8 @@ namespace Le_Jeu_du_Pendu.Model
                     }
                     else
                     {
-                        Form1 Accueil = new Form1();
-                        Accueil.Show();
+                        SousFormulaire SF = new SousFormulaire((System.Windows.Forms.Application.OpenForms["Menu"] as Menu).panelMenu);
+                        SF.openChildForm(new Form1());
                         formulaireJeuActif.Hide();
                     }
                 }

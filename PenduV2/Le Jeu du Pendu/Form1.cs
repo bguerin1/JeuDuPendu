@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Le_Jeu_du_Pendu.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace Le_Jeu_du_Pendu
 {
@@ -52,9 +54,11 @@ namespace Le_Jeu_du_Pendu
             }
             if(txt_prenom.Text !="" && txt_nom.Text !="" && comboBox_difficulté.SelectedIndex > -1)
             {
-                Jeu2 Form2= new Jeu2(txt_prenom.Text+" "+txt_nom.Text, comboBox_difficulté.Text);
-                Form2.Show();
+                //Jeu2 Form2= new Jeu2(txt_prenom.Text+" "+txt_nom.Text, comboBox_difficulté.Text);
+                SousFormulaire SF = new SousFormulaire((System.Windows.Forms.Application.OpenForms["Menu"] as Menu).panelMenu);
+                SF.openChildForm(new Jeu2(txt_prenom.Text + " " + txt_nom.Text, comboBox_difficulté.Text));
                 this.Hide();
+               
             }
             
 
@@ -84,6 +88,7 @@ namespace Le_Jeu_du_Pendu
 
         private void btn_fermer_Click(object sender, EventArgs e)
         {
+            this.Close();
 
         }
     }

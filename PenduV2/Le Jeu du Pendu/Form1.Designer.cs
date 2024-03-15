@@ -104,7 +104,7 @@
             this.btn_fermer.Name = "btn_fermer";
             this.btn_fermer.Size = new System.Drawing.Size(75, 23);
             this.btn_fermer.TabIndex = 33;
-            this.btn_fermer.Text = "Fermer";
+            this.btn_fermer.Text = "Quitter";
             this.btn_fermer.UseVisualStyleBackColor = true;
             this.btn_fermer.Click += new System.EventHandler(this.btn_fermer_Click);
             // 
@@ -112,7 +112,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 407);
+            this.ClientSize = new System.Drawing.Size(800, 446);
             this.Controls.Add(this.btn_fermer);
             this.Controls.Add(this.lbl_difficulté);
             this.Controls.Add(this.comboBox_difficulté);
