@@ -35,6 +35,7 @@
             this.paramètresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.affichageDesDonnéesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,6 +75,8 @@
             // 
             // paramètresToolStripMenuItem
             // 
+            this.paramètresToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.affichageDesDonnéesToolStripMenuItem});
             this.paramètresToolStripMenuItem.Name = "paramètresToolStripMenuItem";
             this.paramètresToolStripMenuItem.Size = new System.Drawing.Size(78, 20);
             this.paramètresToolStripMenuItem.Text = "Paramètres";
@@ -90,6 +93,12 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(800, 446);
             this.panelMenu.TabIndex = 2;
+            // 
+            // affichageDesDonnéesToolStripMenuItem
+            // 
+            this.affichageDesDonnéesToolStripMenuItem.Name = "affichageDesDonnéesToolStripMenuItem";
+            this.affichageDesDonnéesToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.affichageDesDonnéesToolStripMenuItem.Text = "Affichage des données";
             // 
             // Menu
             // 
@@ -117,5 +126,6 @@
         private System.Windows.Forms.ToolStripMenuItem paramètresToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         public System.Windows.Forms.Panel panelMenu;
+        private System.Windows.Forms.ToolStripMenuItem affichageDesDonnéesToolStripMenuItem;
     }
 }

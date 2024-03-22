@@ -19,8 +19,8 @@ namespace Le_Jeu_du_Pendu.Model
 
         private void Initialise()
         {
-            server = "localhost";
-            database = "bdd_pendu";
+            server = "192.168.10.16";
+            database = "BDD_PENDU";
             uid = "guerin2_bryan";
             password = "Bs9IP91a";
             string connectionString;
@@ -31,10 +31,9 @@ namespace Le_Jeu_du_Pendu.Model
         }
         public Connexion()
         {
-
+            
         }
-
-        public Connexion(MySqlConnection laConnection, string leServer, string laDatabase, string leUid,string lePassword)
+        public Connexion(MySqlConnection laConnection, string leServer, string laDatabase, string leUid, string lePassword)
         {
             connection = laConnection;
             server = leServer;
@@ -42,6 +41,8 @@ namespace Le_Jeu_du_Pendu.Model
             uid = leUid;
             password = lePassword;
         }
+
+       
 
 
 
