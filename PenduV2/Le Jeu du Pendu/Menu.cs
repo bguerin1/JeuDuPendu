@@ -23,6 +23,11 @@ namespace Le_Jeu_du_Pendu
         {
             SousFormulaire SF = new SousFormulaire((System.Windows.Forms.Application.OpenForms["Menu"] as Menu).panelMenu);
             SF.openChildForm(new Form1());
+        }
+
+        private void affichageDesDonnéesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SousFormulaire SF = new SousFormulaire((System.Windows.Forms.Application.OpenForms["Menu"] as Menu).panelMenu);
             SF.openChildForm(new affichage());
         }
     }

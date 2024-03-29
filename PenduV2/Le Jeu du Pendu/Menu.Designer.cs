@@ -33,9 +33,9 @@
             this.démarrerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.scoreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.paramètresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.affichageDesDonnéesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.affichageDesDonnéesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,7 +63,7 @@
             // démarrerToolStripMenuItem
             // 
             this.démarrerToolStripMenuItem.Name = "démarrerToolStripMenuItem";
-            this.démarrerToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.démarrerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.démarrerToolStripMenuItem.Text = "Démarrer";
             this.démarrerToolStripMenuItem.Click += new System.EventHandler(this.démarrerToolStripMenuItem_Click);
             // 
@@ -81,6 +81,13 @@
             this.paramètresToolStripMenuItem.Size = new System.Drawing.Size(78, 20);
             this.paramètresToolStripMenuItem.Text = "Paramètres";
             // 
+            // affichageDesDonnéesToolStripMenuItem
+            // 
+            this.affichageDesDonnéesToolStripMenuItem.Name = "affichageDesDonnéesToolStripMenuItem";
+            this.affichageDesDonnéesToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.affichageDesDonnéesToolStripMenuItem.Text = "Affichage des données";
+            this.affichageDesDonnéesToolStripMenuItem.Click += new System.EventHandler(this.affichageDesDonnéesToolStripMenuItem_Click);
+            // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
@@ -93,12 +100,6 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(800, 446);
             this.panelMenu.TabIndex = 2;
-            // 
-            // affichageDesDonnéesToolStripMenuItem
-            // 
-            this.affichageDesDonnéesToolStripMenuItem.Name = "affichageDesDonnéesToolStripMenuItem";
-            this.affichageDesDonnéesToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
-            this.affichageDesDonnéesToolStripMenuItem.Text = "Affichage des données";
             // 
             // Menu
             // 

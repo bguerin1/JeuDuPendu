@@ -5,24 +5,24 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
-using MySqlConnector;
 
 namespace Le_Jeu_du_Pendu.Model
 {
     public class Connexion
     {
         private MySqlConnection connection;
-        private string server;
-        private string database;
-        private string uid;
-        private string password;
-
+        private string server = "192.168.10.16";
+        private string database = "guerin2_bryan_BDD_Pendu";
+        private string uid = "guerin2_bryan";
+        private string password = "Bs9IP91a";
+        public MySqlConnection Connection 
+        { 
+            get { return connection; }
+            set { connection = value; }     
+        
+        } 
         private void Initialise()
         {
-            server = "192.168.10.16";
-            database = "BDD_PENDU";
-            uid = "guerin2_bryan";
-            password = "Bs9IP91a";
             string connectionString;
             connectionString = "SERVER=" + server + ";" + "DATABASE=" +
             database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
@@ -31,15 +31,15 @@ namespace Le_Jeu_du_Pendu.Model
         }
         public Connexion()
         {
-            
+            Initialise();
         }
-        public Connexion(MySqlConnection laConnection, string leServer, string laDatabase, string leUid, string lePassword)
+        public Connexion(string leServer, string laDatabase, string leUid, string lePassword)
         {
-            connection = laConnection;
             server = leServer;
             database = laDatabase;
             uid = leUid;
             password = lePassword;
+            Initialise();
         }
 
        
