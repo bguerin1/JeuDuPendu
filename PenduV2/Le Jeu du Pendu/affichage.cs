@@ -16,6 +16,7 @@ namespace Le_Jeu_du_Pendu
     {
         public Mots dt_mot;
         private DataView dv;
+        public Difficulte dt_difficulte;
         public affichage()
         {
             InitializeComponent();
@@ -28,11 +29,32 @@ namespace Le_Jeu_du_Pendu
             //Gérer la largeur des colonnes
             dgv_Mots.Columns["Mots"].Width = 190;
             dgv_Mots.Columns["Difficultée"].Width = 190;
+
+            dt_difficulte = new Difficulte();
+
+            comboBox_Difficult.DataSource = dt_difficulte.GetListeDifficulte();
+            comboBox_Difficult.DisplayMember = "LABELDIFFICULTE"; //nom de l’alias SQL
+            comboBox_Difficult.ValueMember = "IDDIFFICULTE"; //nom de l’alias SQL
+
+
         }
 
         private void btn_quitterAffichage_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txt_Mot_TextChanged(object sender, EventArgs e)
+        {
+            dv = new DataView(dt_mot.GetListeMotsdifficult(txt_Mot.Text, comboBox_Difficult.SelectedValue.ToString()));
+            dgv_Mots.DataSource = dv;
+
+        }
+
+        private void comboBox_Difficult_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            dv = new DataView(dt_mot.GetListeMotsdifficult(txt_Mot.Text, comboBox_Difficult.SelectedValue.ToString()));
+            dgv_Mots.DataSource = dv;
         }
     }
 }

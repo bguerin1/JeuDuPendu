@@ -62,6 +62,7 @@
             this.comboBox_Difficult.Name = "comboBox_Difficult";
             this.comboBox_Difficult.Size = new System.Drawing.Size(228, 21);
             this.comboBox_Difficult.TabIndex = 2;
+            this.comboBox_Difficult.SelectionChangeCommitted += new System.EventHandler(this.comboBox_Difficult_SelectionChangeCommitted);
             // 
             // lbl_Difficult
             // 
@@ -87,6 +88,7 @@
             this.txt_Mot.Name = "txt_Mot";
             this.txt_Mot.Size = new System.Drawing.Size(228, 20);
             this.txt_Mot.TabIndex = 5;
+            this.txt_Mot.TextChanged += new System.EventHandler(this.txt_Mot_TextChanged);
             // 
             // affichage
             // 
